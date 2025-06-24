@@ -1,0 +1,180 @@
+
+
+:root{
+    --main-bg: #ffffff;
+    --header-bg: #ffffff;
+    --stopwatch-bg: #aab7b8;
+    --logo-color: #000000;
+    --quote-bg: #aab7b8;
+    --ai-bg: #ffffff;
+    --question-bg: #aab7b8;
+    --answer-bg: #f4f6f6;
+    --input-bg: #ffffff;
+    --todo-bg: #E6ECF0;
+    --button-bg: #000080;
+    --button-color: #ffffff;
+    --border-color: #aab7b8;
+    --tab-bg: #aab7b8;
+    --usercard-bg:#fdf6e3
+
+}
+
+#user-card {
+    width: 700px;
+    height: 800px;
+    border: 10px solid #000080CC;
+    border-radius: 5%;
+    background: var(--usercard-bg);
+}
+
+.user-info {
+    width: 100%;
+    height: 50%;
+    /*border: 2px solid green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 3px 7px #00008033;
+}
+
+.user-img img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
+    transForm: translate(-8%, -8%);
+}
+
+/* 오늘의 공부게이지 */
+.playtime {
+    width: 40%;
+    height: 20%;
+    /*border: 2px solid green;*/
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time-gauge{
+    box-shadow: 2px 3px 5px #00008026;
+    border-radius: 15px;
+    width: 70%;
+    height: 20%;
+    overflow: hidden;
+    background: #aab7b866;
+    margin-bottom: 5%;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+#fill-gauge {
+    background: linear-gradient(to right,#efae25,#fbc758);
+    opacity: 0.9;
+    width: 56%;
+    height: 100%;
+
+}
+.time-per{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.time-per#bottom{
+
+    color: var( --logo-color); /* 게이지 위에서 보일 텍스트 색상 */
+    z-index: 2;
+}
+.time-per#top{
+
+     color: #623909; /* 게이지 위에서 보일 텍스트 색상 */
+     z-index: 3;
+     clip-path: inset(0 44% 0 0%); /* 100 - fill gauge width  */
+
+ }
+
+.gauge-message{
+    font-weight: 600;
+    color: #623909;
+}
+
+/* 오늘의 공부게이지 끝*/
+
+
+.circle-container {
+    width: 700px;
+    height: 400px;
+    /*border: 2px solid blue;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.circle-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.achieve-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /*border: 3px solid red;*/
+    background: conic-gradient(
+            hsl(34, 100%, 50%) 180deg,
+            transparent 180deg);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.inner-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grade {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
