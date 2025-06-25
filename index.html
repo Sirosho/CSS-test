@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <div id="user-card">
+    <div id="card-overlay"></div>
+    <div id="user-card" class="show">
+        <div id="close-card-btn"><i class="fas fa-times "></i></div>
         <div class="user-info">
         <div class="user-img"><img src="userImg.png" alt=""></div>
             <div class="playtime">
@@ -23,40 +25,57 @@
             </div>
         </div>
 
-        <div class="circle-container">
-            <div class="circle-card">
-                <div class="achieve-circle">
-                    <div class="inner-circle">
-                        <span class="grade">C+</span>
+        <div class="achieve-container">
+            <div class="achieve-card">
+
+                <div class="achieve-img"><img src="trophy.png" alt=""></div>
+                <div class="achieve-value achieve-text">질문왕</div>
+
+                <div class="achieve-infobox">
+                    <div class="achieve-circle circle1">
+                        <div class="inner-circle">
+                            <span class="grade">C+</span>
+                        </div>
                     </div>
+                    <div class="achieve-stat achieve-text achieve1">11 / 20</div>
                 </div>
-                <div class="achieve-value">질문왕</div>
-                <div class="achieve-stat">11 / 20</div>
             </div>
 
-            <div class="circle-card">
-                <div class="achieve-circle">
-                    <div class="inner-circle">
-                        <span class="grade">C+</span>
+            <div class="achieve-card">
+
+                <div class="achieve-img"><img src="trophy.png" alt=""></div>
+                <div class="achieve-value achieve-text">계획대장군</div>
+
+                <div class="achieve-infobox">
+                    <div class="achieve-circle circle2">
+                        <div class="inner-circle">
+                            <span class="grade">C+</span>
+                        </div>
                     </div>
+                    <div class="achieve-stat achieve-text achieve2">11 / 20</div>
                 </div>
-                <div class="achieve-value">확신의 J</div>
-                <div class="achieve-stat">11 / 20</div>
             </div>
 
+            <div class="achieve-card">
 
+                <div class="achieve-img"><img src="trophy.png" alt=""></div>
+                <div class="achieve-value achieve-text">공부벌레</div>
 
-            <div class="circle-card">
-                <div class="achieve-circle">
-                    <div class="inner-circle">
-                        <span class="grade">C+</span>
+                <div class="achieve-infobox">
+                    <div class="achieve-circle circle3">
+                        <div class="inner-circle">
+                            <span class="grade">C+</span>
+                        </div>
                     </div>
+                    <div class="achieve-stat achieve-text achieve3">11 / 20</div>
                 </div>
-                <div class="achieve-value">공부벌레</div>
-                <div class="achieve-stat">11 / 20</div>
             </div>
 
         </div>
+
+
     </div>
+
+    <script src="playTime.js "></script>
 </body>
 </html>
